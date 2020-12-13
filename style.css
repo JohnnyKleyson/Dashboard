@@ -59,6 +59,14 @@
   font-weight: 500;
   font-size: 20px;
 }
+.brand-image {
+  background-size: auto;
+  background: url(./assets/logo-esig.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+}
 .sidebar-menu {
   padding: 1.5rem 1.5rem 0.375rem;
 }
@@ -93,7 +101,7 @@ label {
   width: 60px;
 }
 
-#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar .sidebar-header .brand-image,
 #sidebar-toggle:checked ~ .sidebar li span:last-child {
   display: none;
 }
@@ -329,7 +337,7 @@ button:first-child:hover {
     z-index: 150;
   }
 
-  .sidebar .sidebar-header h3 span,
+  .sidebar .sidebar-header .brand-image,
   .sidebar li span:last-child {
     display: none;
   }
@@ -354,7 +362,7 @@ button:first-child:hover {
     width: 240px;
   }
 
-  #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+  #sidebar-toggle:checked ~ .sidebar .sidebar-header .brand-image,
   #sidebar-toggle:checked ~ .sidebar li span:last-child {
     display: inline;
   }
