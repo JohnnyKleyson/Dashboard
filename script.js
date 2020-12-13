@@ -13,7 +13,8 @@ responsive: [{
     breakpoint: 480,
     options: {
     chart: {
-        width: 200
+        width: "100%",
+        height: 350
     },
     legend: {
         position: 'top',
