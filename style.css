@@ -338,6 +338,7 @@ button:first-child:hover {
   .sidebar li {
     display: flex;
     justify-content: center;
+    align-self: center;
   }
 
   .main-content {

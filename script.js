@@ -9,19 +9,28 @@ legend:{
     position:"top"
   },
 labels: ['Toys', 'Eletronics', 'Toys'],
-responsive: [{
+responsive: [{/* 
+  breakpoint: 800,
+    options: {
+    chart: {
+        width: "100%",
+        height: 350
+    }
+    }, */
     breakpoint: 480,
     options: {
     chart: {
         width: "100%",
         height: 350
     },
+    
     legend: {
         position: 'top',
         horizontalAlign: "left",
         
     }
     }
+    
 }]
 };
 
