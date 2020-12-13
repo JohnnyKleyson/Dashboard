@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet"> <!--My Css-->
     <link href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css" rel="stylesheet"> <!--Themify Icons-->
-    <script src="https://kit.fontawesome.com/3971d34f07.js" crossorigin="anonymous"></script> <!--Font Awesome-->
     <link rel="icon" href="https://www.esig.com.br/portal/wp-content/themes/esig/favicon.ico">
     <title>Esig Software | Admin</title>
 </head>
 <body>
-    <input type="checkbox" id="sidebar-toggle">
+    <input type="checkbox" id="sidebar-toggle"> <!--Hambuger Menu-->
     <div class="sidebar">
         <div class="sidebar-header">
             <h3 class="brand">
                 <span>Esig Software</span>
             </h3>
-            <label for="sidebar-toggle" class="ti-menu-alt"></label>
-        </div>
+            <label for="sidebar-toggle" class="ti-menu"></label> <!--Hambuger Menu-->
+        </div> <!--Sidebar Header-->
 
         <div class="sidebar-menu">
             <ul>
@@ -80,8 +79,8 @@
                     </a>
                 </li>
             </ul>
-        </div>      
-    </div>
+        </div><!--Sidebar Menu-->
+    </div> <!--Sidebar-->
 
     <div class="main-content">
       <header>
@@ -99,7 +98,7 @@
               <div class="user-icon">
               </div>
           </div>
-      </header>
+      </header> <!--Header-->
       
       <main>
           <div class="dash-cards">
@@ -132,8 +131,29 @@
                   <span class="ti-desktop"></span>
                 </div>
             </div>
-          </div>
+          </div> <!--Dashboard Cards-->
 
+          <div class="charts">
+            <div class="charts-left">
+                <div class="charts-left-title">
+                  <div>
+                    <h2>Sales Perfomance</h2>                  
+                  </div>
+                  <span class="ti-settings"></span>
+                </div>
+                <div id="apex1"></div>
+            </div>
+
+            <div class="charts-right">
+                <div class="charts-right-title">
+                  <div>
+                    <h2>Top Categories</h2>                  
+                  </div>
+                </div>
+                <div id="apex2"></div>
+            </div>
+          </div> <!--Charts-->
+      
           <section class="recent">
                 <div class="activity-grid">
                     <h3>Recent Customers</h3> 
@@ -182,21 +202,22 @@
                        
                     </div>
                 </div>      
-          </section>
-
-
-      </main>
-
-
-
-
-      
+          </section> <!--Dashboard Recent Customes Section-->
+      </main>      
     </div>
 
-
-
- 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>  <!--Apex Charts-->
     <script src="./script.js"></script>
 </body>
 </html>
+
+<!-- 
+
+#chart {
+    border:1px solid black;
+    width: 400px;
+    margin: 35px auto;
+  }
+  #chart h2{
+    text-align:center;
+  }
