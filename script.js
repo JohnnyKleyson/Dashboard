@@ -6,9 +6,10 @@ var options = {
     type: 'donut',
 },
 legend:{
-    position:"top"
+    position:"top",
+    align: "center"
   },
-labels: ['Toys', 'Eletronics', 'Toys'],
+labels: ['Eletronics', 'Furniture', 'Toys'],
 responsive: [{/* 
   breakpoint: 800,
     options: {
@@ -53,11 +54,11 @@ var options = {
     },
     series: [
       {
-        name: "Monitors",
+        name: "Laptops",
         data: [70, 60, 90, 80, 69, 86, 77, 89, 66],
       },
       {
-        name: "Phones",
+        name: "Headsets",
         data: [30, 20, 45, 56, 39, 58, 40, 35, 60],
       },
       {
@@ -65,7 +66,7 @@ var options = {
         data: [85, 85, 101, 98, 87, 105, 91, 114, 94],
       },
       {
-        name: "Laptops",
+        name: "Phones",
         data: [3, 13, 36, 26, 30, 17, 21, 18, 3],
       },
     ],

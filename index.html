@@ -94,12 +94,12 @@
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account Settings</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Log Out</a>
                     </div>
-                </div>
+                </div> <!--Dropdown Header - Bootstrap -->
 
               </div>
               <div class="user-icon"></div>
@@ -165,7 +165,10 @@
 
           <section class="recent">
                 <div class="activity-grid">
-                    <h3>Recent Customers</h3> 
+                    <div class="activity-title">
+                        <h3>Recent Customers</h3> 
+                        <span class="ti-settings"></span>
+                    </div>
                     <div class="activity-card">
                         <div class="table-responsive">
                             <table class="table">   
@@ -223,23 +226,22 @@
                 </div>      
           </section> <!--Dashboard Recent Customes Table - Bootstrap -->
             
-            <!-- Modal Options - Bootstrap-->
+            <!-- Modal "Details" Config - Bootstrap-->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" text-cente>
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" text-cente>
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Saepe illo quaerat ea aspernatur assumenda adipisci voluptatem veritatis, ipsam eius beatae repudiandae natus voluptates quam deserunt, est laborum corporis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Saepe illo quaerat ea aspernatur assumenda adipisci voluptatem veritatis, ipsam eius beatae repudiandae natus voluptates quam deserunt, est laborum corporis.</p>
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
                 </div>
