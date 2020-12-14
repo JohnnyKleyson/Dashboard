@@ -91,7 +91,16 @@
           <div class="social-icons">
               <div class="user-name">
                 <h3>RENEE MCKELVEY</h3>
-                <a href="">Account Settings</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>
+                </div>
+
               </div>
               <div class="user-icon"></div>
           </div>
@@ -159,62 +168,95 @@
                     <h3>Recent Customers</h3> 
                     <div class="activity-card">
                         <div class="table-responsive">
-                            <table>   
+                            <table class="table">   
                                 <tbody>
                                     <tr>
                                         <td>Jerry Mattedi</td>
                                         <td>13 aug 2018 <br>Joined</td>
                                         <td>251-661-5362<br>Phone Number</td>
                                         <td>New York <br>Location</td>
-                                        <td><button>Options</button> <button class="btn-details">Details</button></td>
+                                        <td><button>Options</button> 
+                                        <button class="btn-details" data-toggle="modal" 
+                                        data-target="#exampleModal">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>Elianora Vasilov</td>
                                         <td>13 aug 2018 <br>Joined</td>
                                         <td>351-661-5362<br>Phone Number</td>
                                         <td>Ontario <br>Location</td>
-                                        <td><button>Options</button> <button class="btn-details">Details</button></td>
+                                        <td><button>Options</button> 
+                                        <button class="btn-details" data-toggle="modal" 
+                                        data-target="#exampleModal">Details</button></td>
+                                        
                                     </tr>
                                     <tr>
                                         <td>Marcos Anguiano</td>
                                         <td>13 aug 2018 <br>Joined</td>
                                         <td>251-661-5362<br>Phone Number</td>
                                         <td>Milan<br>Location</td>
-                                        <td><button>Options</button>  <button class="btn-details">Details</button></td>
+                                        <td><button>Options</button> 
+                                        <button class="btn-details" data-toggle="modal" 
+                                        data-target="#exampleModal">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>Alvis Daen</td>
                                         <td>13 aug 2018 <br>Joined</td>
                                         <td>351-661-5362<br>Phone Number</td>
                                         <td>Las Vegas <br>Location</td>
-                                        <td><button>Options</button>  <button class="btn-details">Details</button></td>
+                                        <td><button>Options</button> 
+                                        <button class="btn-details" data-toggle="modal" 
+                                        data-target="#exampleModal">Details</button></td>
                                     </tr>
                                     <tr>
                                         <td>Lisa Shipsey</td>
                                         <td>13 aug 2018 <br>Joined</td>
                                         <td>251-661-5362<br>Phone Number</td>
                                         <td>San Francisco <br>Location</td>
-                                        <td><button>Options</button>  <button class="btn-details">Details</button></td>
+                                        <td><button>Options</button> 
+                                        <button class="btn-details" data-toggle="modal" 
+                                        data-target="#exampleModal">Details</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>      
-          </section> <!--Dashboard Recent Customes Section-->
+          </section> <!--Dashboard Recent Customes Table - Bootstrap -->
+            
+            <!-- Modal Options - Bootstrap-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" text-cente>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Saepe illo quaerat ea aspernatur assumenda adipisci voluptatem veritatis, ipsam eius beatae repudiandae natus voluptates quam deserunt, est laborum corporis.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+                </div>
+            </div>
       </main>
       
-      <footer class="page-footer font-small black">
+      
+      <footer class="page-footer font-small blue">
             <div class="footer-copyright text-center py-3">© 2020 <a href="https://www.esig.com.br">ESIG Software</a> All rights reserved. Created by
             <a href="https://github.com/JohnnyKleyson"> Johnny Kleyson</a>
             </div>
-      </footer>
-      
-     
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </footer> <!--Footer - Bootstrap -->
+    </div><!--Main Content End-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <!--Jquery for Bootstrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><!--Bootstrap file-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><!--Bootstrap file-->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>  <!--Apex Charts-->
     <script src="./script.js"></script> <!--MY Javascript-->
 </body>
