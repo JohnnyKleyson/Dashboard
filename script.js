@@ -2,7 +2,8 @@
 var options = {
     series: [50, 30, 20],
     chart: {
-    width: 330,
+    width: "100%",
+    height: "260px",
     type: 'donut',
 },
 legend:{
