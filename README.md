@@ -16,33 +16,31 @@ e sempre com comentarios para ajudar na manutenção do código.
 
  **CSS3 Utilizado para construir:**
  
--Sidebar
+- Sidebar
 
--Navbar
-
--Cards com os Graficos
-
+- Header
 
 **Bootstrap 4.3.1 Utilizado para construir:**
--Cards
+- Cards
 
--Table com nome dos clientes
+- Cards com os Graficos
 
--Footer
+- Table com nome dos clientes
 
--Modal para botão "Details"
+- Footer
 
--Dropdown para navbar
+- Modal para botão "Details"
+
+- Dropdown para o header
 
 **Javascript Utilizado para construir:**
 
--"Themify Icons", uma biblioteca JS usada para estilizar 
+- "Themify Icons", uma biblioteca JS usada para estilizar 
 o sidebar com icones igual solicitado no wireframe.
 
--"Apex Charts", outra biblioteca JS dessa vez utilizada para exibir 
+- "Apex Charts", outra biblioteca JS dessa vez utilizada para exibir 
 graficos interativos e responsivos dentro dos cards.
 
--
 
 
 Desde já agradeço pela oportunidade e me disponho para qualquer dúvida ou contato.
