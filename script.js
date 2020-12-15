@@ -1,4 +1,5 @@
 /*DONUT CHART*/
+
 var options = {
     series: [50, 30, 20],
     chart: {
@@ -11,28 +12,18 @@ legend:{
     align: "center"
   },
 labels: ['Eletronics', 'Furniture', 'Toys'],
-responsive: [{/* 
-  breakpoint: 800,
-    options: {
-    chart: {
-        width: "100%",
-        height: 350
-    }
-    }, */
+responsive: [{
     breakpoint: 480,
     options: {
     chart: {
         width: "100%",
         height: 350
-    },
-    
+    },  
     legend: {
         position: 'top',
-        horizontalAlign: "left",
-        
+        horizontalAlign: "left",        
     }
-    }
-    
+    }   
 }]
 };
 
