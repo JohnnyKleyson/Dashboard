@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--Bootstrap 4.3-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous"> <!--Bootstrap 4.3-->
     <link href="style.css" rel="stylesheet"> <!--My Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css" rel="stylesheet"> <!--Themify Icons-->
     <link rel="icon" href="https://www.esig.com.br/portal/wp-content/themes/esig/favicon.ico">
     <title>Esig Software | Dashboard </title>
 </head>
 <body>
-    <input type="checkbox" id="sidebar-toggle"> <!--Hambuger Menu-->
+    <input type="checkbox" id="sidebar-toggle"> <!--Hambuger Menu Toggle-->
     <div class="sidebar">
         <div class="sidebar-header">
             <div class="brand-image"></div>
@@ -84,9 +86,9 @@
 
     <div class="main-content">
       <header>
-          <div>
+          <a class="navbar-brand" href="#">
               <span class="ti-cloud"></span>
-          </div>
+          </a> <!--Navbar Brand - Bootstrap-->
 
           <div class="social-icons">
               <div class="user-name">
@@ -100,7 +102,6 @@
                         <a class="dropdown-item" href="#">Log Out</a>
                     </div>
                 </div> <!--Dropdown Header - Bootstrap -->
-
               </div>
               <div class="user-icon"></div>
           </div>
@@ -108,37 +109,65 @@
       
 
       <main>
-          <div class="dash-cards">
-              <div class="card-single">
-                  <div class="card-body">
-                    <div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-4">
+              <div class="card">
+                <div class="content card-body">
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <div class="numbers">
                         <h5>Total Sales</h5>
                         <h4>21,324</h4>
+                      </div>
                     </div>
-                    <span class="ti-shopping-cart"></span>
+                    <div class="col-xs-5">
+                        <div class="icon-big icon-warning text-center">
+                            <i class="fas fa-store"></i>
+                        </div>
+                      </div>
                   </div>
+                </div>
               </div>
-
-              <div class="card-single">
-                <div class="card-body">
-                  <div>
-                      <h5>Total Income</h5>
-                      <h4>$ 211 324</h4>
+            </div>
+            <div class="col-lg-4 col-sm-6 ">
+                <div class="card">
+                  <div class="content card-body">
+                    <div class="row">
+                      <div class="col-xs-7">
+                        <div class="numbers">
+                          <h5>Total Income</h5>
+                          <h4>$ 211 324</h4>
+                        </div>
+                      </div>
+                      <div class="col-xs-5">
+                          <div class="icon-big icon-warning text-center">
+                            <i class="fas fa-tags"></i>
+                          </div>
+                        </div>
+                    </div>
                   </div>
-                  <span class="ti-wallet"></span>
                 </div>
             </div>
-
-            <div class="card-single">
-                <div class="card-body">              
-                  <div>
-                      <h5>Total Views</h5>
-                      <h4>65 2234</h4>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div class="content card-body">
+                    <div class="row">
+                      <div class="col-xs-7">
+                        <div class="numbers">
+                          <h5>Total Views</h5>
+                          <h4>65 2234</h4>
+                        </div>
+                      </div>
+                      <div class="col-xs-5">
+                          <div class="icon-big icon-warning text-center">
+                            <i class="fas fa-tv"></i>
+                          </div>
+                        </div>
+                    </div>
                   </div>
-                  <span class="ti-desktop"></span>
                 </div>
-            </div>
-          </div> <!--Dashboard Cards-->
+              </div>
+        </div>
 
 
           <div class="charts">
@@ -224,9 +253,9 @@
                         </div>
                     </div>
                 </div>      
-          </section> <!--Dashboard Recent Customes Table - Bootstrap -->
+          </section> <!--Dashboard Table - Bootstrap -->
             
-            <!-- Modal "Details" Config - Bootstrap-->
+            
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -245,15 +274,18 @@
                     </div>
                 </div>
                 </div>
-            </div>
+            </div> <!-- Modal "Details" Config - Bootstrap-->
+            
+            
       </main>
       
       
       <footer class="page-footer font-small blue">
-            <div class="footer-copyright text-center py-3">© 2020 <a href="https://www.esig.com.br">ESIG Software</a> All rights reserved. Created by
-            <a href="https://github.com/JohnnyKleyson"> Johnny Kleyson</a>
-            </div>
+        <div class="footer-copyright text-center py-3">© 2020 <a href="https://www.esig.com.br">ESIG Software</a> 
+        All rights reserved. Created by <a href="https://github.com/JohnnyKleyson"> Johnny Kleyson</a>
+        </div>
       </footer> <!--Footer - Bootstrap -->
+
     </div><!--Main Content End-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <!--Jquery for Bootstrap-->
