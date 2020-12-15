@@ -18,12 +18,13 @@ e sempre com comentarios para ajudar na manutenção do código.
  
 -Sidebar
 
--Cards
+-Navbar
 
 -Cards com os Graficos
 
 
 **Bootstrap 4.3.1 Utilizado para construir:**
+-Cards
 
 -Table com nome dos clientes
 
@@ -31,7 +32,7 @@ e sempre com comentarios para ajudar na manutenção do código.
 
 -Modal para botão "Details"
 
--Dropdown para o header
+-Dropdown para navbar
 
 **Javascript Utilizado para construir:**
 
@@ -40,6 +41,8 @@ o sidebar com icones igual solicitado no wireframe.
 
 -"Apex Charts", outra biblioteca JS dessa vez utilizada para exibir 
 graficos interativos e responsivos dentro dos cards.
+
+-
 
 
 Desde já agradeço pela oportunidade e me disponho para qualquer dúvida ou contato.
