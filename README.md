@@ -1,4 +1,4 @@
-Projeto iniciado no sábado (12) e finalizado na -- ().
+Projeto iniciado no sábado (12) e finalizado na Terça (15).
 
 O projeto está no github onde se pode acompanhar todos os commits feitos. 
 
